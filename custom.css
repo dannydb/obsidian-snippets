@@ -1,0 +1,125 @@
+img[alt=rw-book-cover] {
+	object-fit: contain;
+	object-position: center left;
+}
+
+
+.tasks-backlink {
+	font-size: 0;
+}
+
+.tasks-backlink,
+.tasks-backlink a {
+	font-size: 16px;
+	color: var(--text-faint);
+	text-decoration: none;
+}
+
+.tasks-backlink:hover,
+.tasks-backlink:hover a {
+	text-decoration: none;
+	color: var(--text-accent);
+}
+
+.tasks-backlink a.internal-link {
+	text-decoration: none !important;
+}
+
+.tasks-count {
+	margin-bottom: 32px;
+}
+
+.task-list-item.is-checked .tasks-list-text {
+	color: var(--text-faint);
+	text-decoration: line-through;
+}
+
+/* Bible Verses in preview */
+.markdown-preview-view.bible-preview h6 {
+  position: relative;
+	height: 0;
+	overflow: hidden;
+  left: -4%;
+  top: 18px;
+  line-height: 0px;
+  margin-top: -20px;
+  margin-right: 3px;
+  font-family: var(--font-family-preview);
+  font-weight: 500;
+  font-size: 10px !important;
+  font-weight: bold;
+  font-style: normal;
+  color: var(--text-faint) !important;
+	margin: 0 !important;
+}
+
+
+.markdown-preview-view.bible-preview .el-h6 + .el-p {
+	height: 0;
+	overflow: hidden;
+}
+
+.markdown-preview-view.bible-preview .el-p {
+	font-family:'New York', Georgia, 'Times New Roman', Times, serif;
+}
+
+.markdown-preview-view.bible-preview .el-p a.internal-link {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif !important;
+}
+
+
+.markdown-preview-view.bible-preview .el-p {
+	font-size: 105%;
+}
+
+@media screen and (min-width: 960px) {
+	.markdown-preview-view.bible-preview .el-p {
+		font-size: 110%;
+	}
+}
+
+
+.markdown-preview-view.bible-preview .el-h1 + .el-hr {
+	display: none;
+}
+
+.markdown-preview-view.bible-preview h1 {
+	font-size: 200%;
+	font-weight: 800;
+}
+
+
+.markdown-preview-view.bible-preview h2 {
+	font-size: 150%;
+}
+
+.markdown-preview-view.bible-preview h2:before {
+	content: '';
+	display: block;
+	width: 100px;
+	height: 2px;
+	margin: 20px 0;
+	background-color: var(--background-modifier-border);
+}
+
+.markdown-preview-view.bible-preview h3 {
+	font-size: 125%;
+}
+
+
+.markdown-preview-view.bible-preview sup {
+	color: var(--text-faint);
+	position: relative;
+	top: 0.4em;
+	line-height: 0.8;
+	vertical-align: top;
+	font-size: 0.8em;
+}
+
+blockquote sup {
+	vertical-align: top;
+	position: relative;
+	top: 2px;
+	color: var(--text-faint);
+}
+
